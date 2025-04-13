@@ -1,0 +1,15 @@
+{
+  "name": "video-file-compressor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/anuj-thakur-513/video-file-compressor.git",
+  "author": "Anuj Thakur",
+  "license": "MIT",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.3"
+  }
+}
