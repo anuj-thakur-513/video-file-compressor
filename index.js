@@ -16,8 +16,8 @@ import ffmpeg from "fluent-ffmpeg";
   const fileName = fileNameWithExtension.split(".").shift();
 
   ffmpeg(filePath)
-    .outputOptions(["-c:v", "libx264", "-crf", "28", "-preset", "medium"])
-    .output(`${fileName}_compressed_medium.${fileExtension}`)
+    .outputOptions(["-c:v", "libx264", "-crf", "28", "-preset", "slow"])
+    .output(`${fileName}_compressed.${fileExtension}`)
     .on("start", () => {
       console.log("processing started");
     })
